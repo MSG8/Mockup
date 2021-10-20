@@ -1,0 +1,35 @@
+.cabecera{
+	width: 100%;
+	border-bottom: 5px solid #7A9A01;
+}
+article{
+	margin-top: 50px;
+}
+.parrafos{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+.parrafos h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parrafos div{
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+ a.flecha {
+ display: none;
+ }
+}
+@media only screen and (max-width: 1300px) {
+  .cuadros div
+  {
+      max-width: 230px;
+  }
+  .cuadros img
+  {
+      max-width: 140px;
+      max-height: 120px;
+  }
+}

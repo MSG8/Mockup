@@ -1,0 +1,102 @@
+.cabecera{
+	width: 100%;
+	border-bottom: 5px solid #7A9A01;
+}
+article{
+	margin-top: 50px;
+}
+.calendar section:first-child h2{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.calendar section:first-child p{
+	text-align: justify;
+}
+.calendar section:nth-child(2){
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+}
+.calendar section:nth-child(2) div:nth-child(2){
+	text-align: center;
+}
+.calendar section:nth-child(2) div:nth-child(2) img{
+	max-width: 40vw;
+	max-height: 300px;
+	width: auto;
+
+}
+.calendar section:nth-child(2) div:first-child table{
+	border-collapse: collapse;
+	border: 1px solid #7A9A01;
+	width: 100%;
+	max-height: 300px;
+	height: 100%;
+}
+.calendar section:nth-child(2) div:first-child tr{
+	border: 1px solid #7A9A01;
+	width: inherit;
+}
+.calendar section:nth-child(2) div:first-child th{
+	background-color: #7A9A01;
+	border: 1px solid black;
+}
+.calendar section:nth-child(2) div:first-child td{
+	border: 1px solid #7A9A01;
+}
+.parrafos{
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+.parrafos h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.parrafos div{
+    margin-bottom: 40px;
+}
+.gridinfo {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: 2vw;
+  grid-auto-rows: minmax(16vw, auto);
+  margin-bottom: 50px;
+}
+.gridinfo div{
+	border: 2px solid black;
+	width: 18vw;
+	height: auto;
+	background-color: lightgray;
+}
+.parallax2{
+	background-image: url('img/parallax.jpg');
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax2 h1{
+	color: white;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+.parallax2 a{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #7A9A01;
+	padding: 20px 60px;
+	border-radius: 50px;
+	box-shadow: 3px 3px 7px black;
+	transition: all 500ms ease;
+}
+.parallax2 a:hover{
+	background-color: black;
+}
+.pwrapper{
+	text-align: center;
+	padding: 100px 0px 120px 0px;
+}

@@ -1,0 +1,89 @@
+.cabecera{
+	width: 100%;
+	border-bottom: 5px solid #7a9a01;
+}
+article{
+	margin-top: 50px;
+}
+.parallax1{
+	height: 300px;
+	background-image: url(img/parallaxInfo.jpg);
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parrafos{
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+.parrafos h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.parrafos div{
+  margin-bottom: 40px;
+}
+form{
+	margin-bottom: 40px;
+}
+input{
+	width:40%;
+	display: block;
+	padding: 0.7em;
+	margin-bottom: 1em;
+	border: 2px solid #7a9a01;
+}
+textarea{
+	width: 100%;
+	display: block;
+	height: 300px;
+	overflow: scroll;
+	resize: none;
+	padding: 0.7em;
+	margin-bottom: 1em;
+	border: 2px solid #7a9a01;
+}
+select{
+	width:42.1%;
+	display: block;
+	padding: 0.7em;
+	margin-bottom: 1em;
+	border: 2px solid #7a9a01;
+}
+input[type="submit"]{
+	width:42.1%;
+	color: white;
+	font-weight: bold;
+	background-color: #7a9a01;
+	transition: all 500ms ease;
+}
+input[type="submit"]:hover{
+	background-color: #232323;
+	border: 2px solid #232323;
+}
+form fieldset div input{
+	display: inline-block;
+	width: 40%;
+}
+fieldset{
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+ a.flecha {
+ display: none;
+ }
+}
+@media only screen and (max-width: 1300px) {
+  .cuadros div
+  {
+      max-width: 230px;
+  }
+  .cuadros img
+  {
+      max-width: 140px;
+      max-height: 120px;
+  }
+}

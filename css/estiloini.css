@@ -1,0 +1,183 @@
+.main1 section:first-child {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 50px;
+	grid-auto-rows: 300px;
+}
+.main1 section:first-child div {
+	background-color: lightgray;
+	max-height: 400px;
+	height: auto;
+}
+.main1 section:nth-child(2){
+	text-align: center;
+}
+.main1 section:nth-child(2) > div{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	grid-auto-rows: minmax(100px, auto);
+}
+.main1 section:nth-child(2) > div div:first-child {
+	text-align: justify;
+}
+.main1 section:nth-child(2) > div div:nth-child(2) {
+	text-align: center;
+}
+.main1 section:nth-child(2) > div div:nth-child(2) img {
+	max-height: 20vw;
+}
+.main1 section:nth-child(2) h1 {
+	margin: 50px;
+}
+.slider {
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+.slider section {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	margin: 20px 0;
+}
+.slider section div {
+	padding: 0 2px;
+	transition: 250ms all;
+	width: 341px;
+	height: 192px;
+}
+.slider section div img {
+	max-width: 341px;
+	max-height: 192px;
+}
+.slider section div:hover {
+	margin: 0 40px;
+	transform: scale(1.2);
+}
+.slider section a {
+	position: absolute;
+	text-decoration: none;
+	font-size: 6em;
+	background: black;
+	width: 80px;
+	padding: 20px;
+	text-align: center;
+	z-index: 1;
+}
+.slider section a:nth-of-type(1) {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, white 100%);
+}
+.slider section a:nth-of-type(2) {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, white 100%);
+}
+.main2 section:first-child, article section:last-child {
+	text-align: justify;
+	margin-bottom: 50px;
+}
+.main2 section:first-child h1 {
+	margin: 50px;
+	text-align: center;
+}
+.main2 section:nth-child(2){
+	text-align: center;
+	margin-bottom: 50px;
+}
+.main2 section:nth-child(2) > div{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	grid-auto-rows: minmax(100px, auto);
+}
+.main2 section:nth-child(2) > div div) {
+	text-align: center;
+}
+.main2 section:nth-child(2) > div div img {
+	max-height: 300px;
+	max-width: 25vw;
+}
+.cuadros h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.cuadros{
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.cuadros section{
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+.cuadros div{
+    vertical-align: top;
+    flex: 1;
+    text-align: center;
+    max-width: 230px;
+    padding:1rem 0;
+    border: 1px solid #7A9A01;
+    margin: 0 1%;
+}
+.cuadros img{
+    max-width: 200px;
+    max-height: 150px;
+    background-color: grey;
+}
+.cuadros .caption{
+    display: block !important;
+}
+.parallax2{
+	background-image: url('img/parallax.jpg');
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax2 h1{
+	color: white;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+.parallax2 a{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #7A9A01;
+	padding: 20px 60px;
+	border-radius: 50px;
+	box-shadow: 3px 3px 7px black;
+	transition: all 500ms ease;
+}
+.parallax2 a:hover{
+	background-color: black;
+}
+.pwrapper{
+	text-align: center;
+	padding: 100px 0px 120px 0px;
+}
+@media only screen and (max-width: 600px) {
+ a.flecha {
+ display: none;
+ }
+}
+@media only screen and (max-width: 1300px) {
+  .cuadros div
+  {
+      max-width: 230px;
+  }
+  .cuadros img
+  {
+      max-width: 140px;
+      max-height: 120px;
+  }
+}
